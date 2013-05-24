@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/simpleInsertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="simpleInsert" />
+
+    <Button
+        android:id="@+id/transactionInsertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/simpleInsertBtn"
+        android:layout_below="@+id/simpleInsertBtn"
+        android:layout_marginTop="30dp"
+        android:text="transactionInsert" />
+
+    <Button
+        android:id="@+id/StatementInsertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/transactionInsertBtn"
+        android:layout_below="@+id/transactionInsertBtn"
+        android:layout_marginTop="28dp"
+        android:text="StatementInsert" />
+
+    <Button
+        android:id="@+id/StatementWithTransactionInsertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StatementInsertBtn"
+        android:layout_below="@+id/StatementInsertBtn"
+        android:layout_marginTop="26dp"
+        android:text="StatementWithTransaction" />
+
+    <TextView
+        android:id="@+id/simpleInsertTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/simpleInsertBtn"
+        android:layout_alignBottom="@+id/simpleInsertBtn"
+        android:layout_alignParentRight="true"
+         />
+
+    <TextView
+        android:id="@+id/transactionInsertTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/transactionInsertBtn"
+        android:layout_alignBottom="@+id/transactionInsertBtn"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/StatementInsertTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StatementInsertBtn"
+        android:layout_alignBottom="@+id/StatementInsertBtn"
+        android:layout_alignParentRight="true"
+      />
+
+    <TextView
+        android:id="@+id/StatementWithTransactionInsertTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StatementWithTransactionInsertBtn"
+        android:layout_alignBottom="@+id/StatementWithTransactionInsertBtn"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/ResetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Reset" />
+
+    <EditText
+        android:id="@+id/recordValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ResetBtn"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberSigned" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
